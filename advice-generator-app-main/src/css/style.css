@@ -1,0 +1,80 @@
+:root{
+    --Cordotexto: hsl(193, 38%, 86%);
+    --Cordobotãodocardedotexto: hsl(150, 100%, 66%);
+    --Cordocard: hsl(217, 19%, 24%);
+    --Cordefundo: hsl(218, 23%, 16%);
+}
+
+body{
+    font-family: "Manrope", serif;
+    background-color: var(--Cordefundo);
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    color: white;
+    background-color: var(--Cordocard);
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.card h4 {
+    color: var(--Cordobotãodocardedotexto);
+}
+
+.card p{
+    color: var(--Cordotexto);
+    font-size: 20px;
+    width: 330px;
+    font-weight: 800;
+}
+
+.card .pattern-divider{
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--Cordobotãodocardedotexto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    transition: .2ms;
+}
+
+.icon:hover{
+    box-shadow: 0 0 10px 2px var(--Cordobotãodocardedotexto);
+}
+
+.icon img {
+    width: 20px;
+    
+}
+
+@media (max-width: 520px){
+    .card {
+        width: 360px;
+    }
+}
